@@ -1,0 +1,162 @@
+
+.header{
+	padding: 10px;
+	& > h1{
+		font-weight: bold;
+		margin-bottom: 0px;
+	}
+	& > h4 {
+		color: #DDD
+	}
+	background: #47B8B8;
+	color: #EFEFEF;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    overflow-y: auto;
+    background: #efefef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-nav {
+    list-style: none;
+}
+
+a {
+    color: #CE3100;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover{
+    	text-decoration: none;
+    }
+    &:active{
+    	text-decoration: none;
+    }
+    &:link {
+    text-decoration: none;
+}
+}
+
+nav {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+}
+
+nav ul {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+}
+
+nav li {
+    float: left;
+    padding: 0 20px;
+}
+
+nav li a {
+    position: relative;
+    padding: 20px 0;
+    color: #EEE;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav li.selected a {
+    color: #CE3100;
+}
+
+nav li a:after {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #ddd;
+    content: '';
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+nav li a:hover:after {
+    left: 0;
+    width: 100%;
+    content: '';
+}
+
+nav li:nth-child(3),
+nav li:nth-child(4) {
+    float: right;
+}
+
+
+#logo {
+    position: absolute;
+    left: 50%;
+    margin-top: 14px;
+    margin-left: -60px;
+    width: 120px;
+}
+
+#logo img {
+    max-width: 100%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#logo img:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 770px) {
+    nav li a:after {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    nav {
+        float: left;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    nav li {
+        padding: 0 5px;
+    }
+    nav li:nth-child(3),
+    nav li:nth-child(4) {
+        float: right;
+    }
+    nav li a {
+        position: relative;
+        padding: 10px 0;
+        color: #868695;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    #logo {
+        margin-top: 10px;
+        margin-left: -45px;
+        width: 90px;
+    }
+
+}
