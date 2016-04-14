@@ -4,14 +4,9 @@ class Header extends React.Component {
 	render() {
 		return (
 			<div className="header">
-				<div className="container">
-					<div id="logo">
-						<a href="index.html">
-							<img src="../images/TangHao.png" alt="TangHao"/>
-						</a>
-					</div>
+				<div className="container header-container">
 					<nav role="navigation">
-						<ul className="sidebar-nav">
+						<ul className="header-nav">
 							<li><a herf="#">Skills</a></li>
 							<li><a herf="#">Experiences</a></li>
 							<li><a herf="#">Profolios</a></li>

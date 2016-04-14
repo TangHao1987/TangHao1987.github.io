@@ -1,16 +1,16 @@
-require('../sass/app.scss');
+require('../css/main.css');
 
 import 'bootstrap/dist/css/bootstrap.css'
 import React from 'react'
 import Header from './Header'
-import SideBar from './SideBar'
+import Board from './Board'
 
 class Main extends React.Component {
 	render() {
 		return (
 			<div className="app">
 				<Header></Header>
-				<SideBar></SideBar>
+				<Board></Board>
 			</div>
 		)
 	}
