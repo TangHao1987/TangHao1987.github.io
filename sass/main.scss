@@ -1,0 +1,20 @@
+@import "./variables.scss";
+@import "./headPage.scss";
+body{
+	background-color: $r-prim-color;
+	font-family: $prim-font;
+}
+
+h1{
+	font-weight: bold;
+    font-size: 50px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3{
+	font-family: $sub-font;
+	font-size: 35px;
+}

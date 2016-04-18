@@ -6,8 +6,10 @@ class Board extends React.Component {
 			<div className="board">
 				<div className="container">
 					<div id="board-inner" className="row center text-center">
-						<h1>Hi, Tang Hao</h1>
-						<h2>Drink some water, stay clam, and eat a banana</h2>
+						<h1>Hi, I am Tang Hao</h1>
+						<h2>a developer wants to change the world</h2>
+						<h3>Drink some water, stay clam <br/>
+						 and eat a banana</h3>
 					</div>
 				</div>
 			</div>

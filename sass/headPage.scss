@@ -1,0 +1,84 @@
+@import "./variables.scss";
+.head-page{
+    background-image: url("../images/background.png");
+    background-color: $r-prim-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header{
+    padding-top: 10px;
+    nav {
+        float: left;
+        width: 100%;
+        & ul{
+            display: inline-block;
+            width: 70%; 
+        }
+        & li{
+            float: left;    
+            & a{
+                border-radius: 5px;
+                position: relative;
+                padding: 10px 10px;
+                color: $r-prim-color;
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: none;        
+                &:after{
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10%;
+                    width: 10%;
+                    background-color: $r-prim-color;
+                    -webkit-transition: all 0.2s;
+                    transition: all 0.2s; 
+                }
+            }
+            & a:hover,
+            &.selected a {
+                color: $prim-color;
+                background:$r-prim-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header-container{
+    margin-left: 0;
+}
+
+.header-nav {
+    list-style: none;
+}
+
+.header > a {
+    margin: 0 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.board {
+    padding: 10em 0;
+    margin: auto;
+    height: 100%;
+    display:block;
+    font-family: "roboto", Helvetica, Arial, sans-serif;
+    color: #DDD;
+}
+
+
+
+@media (max-width: 770px) {
+    .header {
+        nav ul{
+            width: 100%;   
+        }
+    }
+}
+
+
