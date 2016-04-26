@@ -4,7 +4,7 @@ class Header extends React.Component {
 	render() {
 		return (
 			<div className="header">
-				<div className="container header-container">
+				<div className="header-container">
 					<nav role="navigation">
 						<ul className="header-nav">
 							<li><a herf="#">Skills</a></li>

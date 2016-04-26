@@ -1,20 +1,6 @@
-@import "./variables.scss";
-@import "./headPage.scss";
-body{
-	background-color: $r-prim-color;
-	font-family: $prim-font;
-}
+@import "./utils/_variables.scss";
+@import "./utils/_utilities.scss";
 
-h1{
-	font-weight: bold;
-    font-size: 50px;
-}
-
-h2 {
-	font-size: 40px;
-}
-
-h3{
-	font-family: $sub-font;
-	font-size: 35px;
-}
+@import "./partials/_global.scss";
+@import "./partials/_headpage.scss";
+@import "./partials/_skills.scss";
