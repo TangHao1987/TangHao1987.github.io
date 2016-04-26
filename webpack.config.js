@@ -20,7 +20,7 @@ module.exports = {
     devtool: 'cheap-module-eval-source-map',
     output: {
         // path: path.join(__dirname, "dist"),
-        publicPath: 'http://localhost:8080/',
+        // publicPath: 'http://localhost:8080/',
         filename: 'public/[name].js'
     },
     devServer: {
